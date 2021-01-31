@@ -16,12 +16,11 @@ npm install
 # Transpile .proto to .js
 protoc --js_out=import_style=commonjs,binary:. employees.proto
 
-# Build
-npm run build
-
 # Run JSON
-node index.js
+node index.mjs
 
 # Run Protobuf
-node index_proto.js
+node index_proto.mjs
 ```
+
+Compare size of data.binary and data.json
